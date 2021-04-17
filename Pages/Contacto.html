@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+	<title>Contacto - MRU</title>
+</head>
+<body class="pageBody">
+<header>
+    <nav>
+        <ul>
+            <li class="navMenu"><a class="navLink" href="../Inicio.html">Inicio</a></li>
+            <li class="navMenu"><a class="navLink" href="Banda.html">Banda</a></li>
+            <li class="navMenu"><a class="navLink" href="Shows.html">Shows</a></li>
+            <li class="navMenu"><a class="navLink" href="Galeria.html">Galería</a></li>
+            <li class="navMenu actualPage">Contacto</li>
+        </ul>
+    </nav>
+</header>
+<main>
+	<form method="get">
+		<label for="fname">Nombre:</label>
+		<input id="fname" name="fname" required><br>
+		<label for="lname">Apellido:</label>
+		<input id="lname" name="lname" required><br>
+		<label for="mail">Email:</label>
+		<input id="mail" name="mail" required><br><br>
+
+		<label for="asunto">Asunto:</label>
+		<select name="asunto" required>
+			<option value="contrataciones">Contrataciones</option>
+			<option value="shows">Shows</option>
+			<option value="otro">Otro</option>
+		</select> <br>
+
+		<label for="comentarios"></label>
+		<textarea name="comentarios" maxlenght="140" cols="40" rows="8" placeholder="Comentarios"></textarea><br>
+
+		<label for="newsletter"> Recibir Newsletter</label> 
+		<input name="newsletter" type="checkbox"><br><br>
+
+		<input type="reset" value="Limpiar">
+		<input type="submit" value="Enviar">
+	</form>
+</main>
+</body>
+</html
