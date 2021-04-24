@@ -14,10 +14,16 @@ body{
 	transition:1s;
 }
 ul{
-	width:100vw;
+	width:70vw;
 	position:relative;
 	left:250px;
 	top:10px;
+	padding:0;
+}
+@media(max-width: 1206px){
+	ul{
+		left:20px;
+	}
 }
 .navMenu{
 	display: inline;
@@ -368,16 +374,15 @@ ul{
 }
 
 /*Contacto*/
-form{
+.formulario{
 	margin:20px;
-	border-width:2px;
-	border-color:black;
-	border-style:solid;
-	padding:5px;
-	font-family:"Quicksand",sans-serif;
-	background:grey;
-	border-radius:20px;
+	width:80%;
 }
+.form-label{
+	color:white;
+	font-family:"Quicksand",sans-serif;
+}
+
 
 /*Págs. de cada show*/
 .showPageContainer{
@@ -385,7 +390,7 @@ form{
 }
 .showPageGrid{
 	display:grid;
-	grid-template-rows: 180px 357px 357px 357px 357px;
+	grid-template-rows: 50px 357px 357px 357px 357px;
 	grid-template-columns:639px 639px;
 	margin:20px;
 }
@@ -439,3 +444,13 @@ form{
 	grid-row:5/span 1;
 	grid-column:2/span 1;
 }
+.carousel{
+	width:90%;
+	left:70px;
+}
+.carousel-inner{
+	height:500px;
+	width:70%;
+	left:170px;
+}
+
