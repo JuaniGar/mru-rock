@@ -51,6 +51,11 @@ body {
     margin: 0 25px; } }
 
 /*Inicio*/
+.inicioLogo {
+  position: relative;
+  top: 55px;
+  left: 80px; }
+
 .inicioTitulo {
   color: #ab1609;
   font-family: "Lato", sans-serif;
@@ -61,7 +66,7 @@ body {
 
 .inicioHeader {
   background: black;
-  background-image: linear-gradient(0deg, rgba(180, 180, 180, 0) 70%, rgba(150, 150, 150, 0.8) 75%, black 95%), url("../Media/Inicio/backgroundInicio1.jpg");
+  background-image: linear-gradient(0deg, rgba(180, 180, 180, 0) 70%, rgba(150, 150, 150, 0.8) 75%, black 95%), url("../Media/Inicio/background-inicio.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -139,8 +144,12 @@ body {
 .bandaText {
   margin: 30px 10px;
   font-family: "Quicksand", sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: white; }
+
+.bandaTextDesc {
+  text-indent: 10px;
+  text-align: justify; }
 
 .bandaImg {
   width: 30%;
@@ -482,7 +491,7 @@ body {
 
 .footer__redes {
   position: relative;
-  top: 80px;
+  top: 70px;
   right: 200px;
   float: right; }
 
@@ -508,9 +517,10 @@ body {
 .footer__menu {
   width: 20vw;
   position: relative;
-  left: 350px;
-  top: 20px;
-  padding: 0; }
+  left: 70px;
+  top: 60px;
+  margin: 0;
+  display: inline-block; }
 
 .footer__menu__item {
   display: inline;
@@ -530,9 +540,10 @@ body {
 .footer__logo {
   color: white;
   position: relative;
-  top: 100px;
-  left: 150px;
-  font-size: 25px; }
+  top: 50px;
+  left: 50px;
+  font-size: 25px;
+  float: left; }
 
 .footer__logo__link {
   text-decoration: none;
