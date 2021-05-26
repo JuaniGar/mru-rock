@@ -149,17 +149,14 @@ body{
 	}
 	.imgNoticia{
 		height:180px;
-		}
+	}
 	.textNoticia{
 		font-size:17px
 	}
-	.inicioTitulo{
-		top:15px;
-		left:25px;
-		font-size:45px
-	}
 	.inicioHeader{
 		height:500px;
+		background-image: linear-gradient(0deg, rgba(180,180,180,0) 70%, rgba(150,150,150,1) 75%, rgba(0,0,0,1) 95%),url("../media/inicio/background-inicio-min.jpg");
+		background-size:contain;
 	}
 	.inicioLogo{
 		top:10px;
