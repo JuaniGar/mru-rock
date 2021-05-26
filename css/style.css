@@ -7,8 +7,15 @@
 body {
   overflow-x: hidden; }
 
+.navLabel {
+  display: none; }
+
+.navInput {
+  display: none; }
+
 .navLink {
-  text-decoration: none; }
+  text-decoration: none;
+  color: white; }
 
 .navLink:hover {
   color: #ab1609;
@@ -28,9 +35,6 @@ body {
   font-weight: 800;
   font-family: "Lato", sans-serif; }
 
-.navLink {
-  color: white; }
-
 .header__menu__item--actual {
   display: inline;
   margin: 0 50px;
@@ -44,25 +48,39 @@ body {
 
 @media only screen and (max-width: 575px) {
   .header__menu {
-    left: 10vw;
-    width: 100vw; }
+    display: none;
+    position: absolute;
+    left: 60px; }
+  .navInput:checked ~ .header__menu {
+    display: block; }
+  .navLabel {
+    display: inline-block;
+    color: white;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    line-height: 60px;
+    font-weight: 800;
+    text-align: center;
+    user-select: none; }
   .header__menu__item {
-    font-size: 15px;
-    margin: 0 25px; } }
+    display: block;
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    font-size: 18px; }
+  .header__menu__item--actual {
+    display: block;
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    font-size: 18px; } }
 
 /*Inicio*/
 .inicioLogo {
   position: relative;
   top: 55px;
   left: 80px; }
-
-.inicioTitulo {
-  color: #ab1609;
-  font-family: "Lato", sans-serif;
-  font-size: 60px;
-  position: relative;
-  left: 50px;
-  top: 50px; }
 
 .inicioHeader {
   background: black;
@@ -126,7 +144,10 @@ body {
     left: 25px;
     font-size: 45px; }
   .inicioHeader {
-    height: 500px; } }
+    height: 500px; }
+  .inicioLogo {
+    top: 10px;
+    left: 150px; } }
 
 /*Banda*/
 .bandaTitle {
@@ -539,19 +560,26 @@ body {
   position: relative;
   top: 50px;
   left: 50px;
-  font-size: 25px;
   float: left; }
-
-.footer__logo__link {
-  text-decoration: none;
-  color: white; }
 
 @media only screen and (max-width: 575px) {
   .footer__logo {
-    left: 15px;
-    font-size: 18px; }
+    top: 40px;
+    left: 10px; }
+  .footer__logo__img {
+    width: 220px;
+    height: 120px; }
   .footer__menu {
-    width: 15vw;
-    left: 60px; }
+    width: 100vw;
+    top: 35px;
+    left: 15px;
+    justify-content: center; }
+  .footer__menu__item {
+    margin: 0 20px; }
+  .footer__menu__item--actual {
+    margin: 0 20px; }
   .footer__redes {
-    right: 80px; } }
+    right: 80px;
+    top: 55px; }
+  .footer__redes__title {
+    font-size: 30px; } }
