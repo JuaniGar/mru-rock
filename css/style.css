@@ -134,6 +134,13 @@ body {
   border-width: 1px;
   border-color: black white white black; }
 
+.fechaNoticia {
+  position: absolute;
+  left: 10px;
+  top: 2px;
+  font-style: italic;
+  color: grey; }
+
 .imgNoticia {
   width: 50%;
   height: 270px;
@@ -151,13 +158,6 @@ body {
   left: 15%;
   bottom: 30px;
   color: white; }
-
-.fechaNoticia {
-  position: absolute;
-  left: 10px;
-  top: 2px;
-  font-style: italic;
-  color: grey; }
 
 @media only screen and (max-width: 575px) {
   .noticia {
