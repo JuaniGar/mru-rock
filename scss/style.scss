@@ -399,11 +399,15 @@ body{
 	}
 }
 @media only screen and (max-width: 575px){
+	.boton{
+		bottom:7%;
+	}
 	.botonGaleria{
-		font-size: 25px;
+		font-size: 22px;
+		padding:5px;
 	}
 	.showSuspendido{
-		font-size: 25px;
+		font-size: 22px;
 	}
 }
 /*Galería*/
